@@ -37,7 +37,7 @@ public class FaceDetectController {
     Logger log = LoggerFactory.getLogger(FaceDetectController.class);
 
     @ResponseBody
-    @RequestMapping("ajaxRequestInfo.do")
+    @RequestMapping("/ajaxRequestInfo.do")
     public Map<String, Object> ajaxRequestInfo(HttpServletRequest request, //RequestQueryForm form,
                                                @RequestParam(value = "file", required = false) MultipartFile file) {
         Map<String, Object> map = new HashMap<String, Object>();
