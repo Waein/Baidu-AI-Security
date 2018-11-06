@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人脸识别</title>
+</head>
+<body>
+<form  id="add_form" name="add_form" action="" method="post" enctype="multipart/form-data" onsubmit="return checkformDelSpace(this)">
+    <!-- 图片路径隐藏域 -->
+    <!-- 主体部分 -->
+    <div class="content">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget">
+                    <!-- 选项卡头 -->
+                    <div class="head dark">
+                        <div class="icon">
+                            <i class="icos-stats-up"></i>
+                        </div>
+                        <h2>人脸识别</h2>
+                    </div>
+                    <div class="block-fluid">
+                        <div class="tab-content">
+                            <div class="tab-pane active">
+                                <!-- 头 -->
+                                <div class="head">
+                                    <div class="icon">
+                                        <i class="icosg-clipboard1"></i>
+                                    </div>
+                                    <h2>人脸识别<span >（其中 <span style="color: red;font-size: larger;font-weight: inherit" >*</span> 为必填项）</span></h2>
+                                </div>
+
+
+                                <%--<div class="row-form">--%>
+                                <%--<div class="span2">附件</div>--%>
+                                <%--<div class="span10">--%>
+                                    <%--<div class="ajaxuploadfile_component_1">--%>
+                                        <%--<div class="ajaxuploadfile_one">--%>
+                                            <%--<div class="span12">--%>
+                                                <%--<div class="input-append file">--%>
+                                                    <%--<input type="file" name="file"/>--%>
+                                                    <%--<input type="text" id="addFile" readonly="readonly"--%>
+                                                    <%--class="funcCall[checkFile]"/>--%>
+                                                    <%--<button class="btn" type="button">浏览</button>--%>
+                                                    <%--</div>--%>
+                                                <%--</div>--%>
+                                            <%--</div>--%>
+                                        <%--</div>--%>
+                                    <%--</div>--%>
+                                <%--</div>--%>
+
+                                <div class="row-form">
+                                     <input type='file' id='iptfileupload' name="file" onchange='show()' value='' />
+                                </div>
+
+                                <div class="row-form">
+                                     <img src='#' alt='' id='img' style="width: 260px;height: 230px;" />
+                                    <canvas style="" hidden="hidden"  id="canvas" style="width: 260px;height: 230px;"></canvas>
+                                </div>
+
+                                <div class="row-form">
+                                    <h1>人脸检测实时数据</h1>
+                                    <span>年龄：</span><span id="age"></span><br/>
+                                    <span>颜值：</span><span id="beauty" ></span><br/>
+                                    <span>性别：</span><span id="gendergender"></span><br/>
+                                    <span>是否戴眼镜:</span><span id="glasses"></span><br/>
+                                    <span>表情：</span><span id="expression"></span><br/>
+                                    <span>活体分数：</span><span id="faceverify"></span><br/>
+                                </div>
+
+                            </div><!--tab-plane active-->
+                            <div class="toolbar bottom TAC">
+                                <input style="width: 10%" id="doSave" class="btn btn-primary" type="button" value="提交"/>      <input style="width: 10%" id="doChannel" class="btn" type="button" value="取消 " onclick="javascript :history.go(-1)" />
+                            </div>
+                        </div><!--tab-content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体部分 -->
+</form>
+</body>
+</html>
