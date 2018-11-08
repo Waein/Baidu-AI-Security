@@ -1,0 +1,10 @@
+server:
+  port: 63342
+
+aliyun:
+  oos:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access_key_id: LTAIRGxaf6yoUsj0
+    access_key_secret: 3gcfQkeWjaJ3tunuv4yyY4DStgpriz
+    backet_name: uploadpicture
+    folder: folder/

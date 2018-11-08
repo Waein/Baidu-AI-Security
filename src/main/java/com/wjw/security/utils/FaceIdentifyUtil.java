@@ -413,6 +413,24 @@ public class FaceIdentifyUtil {
     /**
      * 身份验证
      *
+     * @param file
+     * @param idCardNumber
+     * @param name
+     * @return
+     */
+    public static String personVerify(File file, String idCardNumber, String name) {
+        try {
+            return personVerify(FileToByte(file), idCardNumber, name);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 身份验证
+     *
      * @param arg0
      * @param idCardNumber
      * @param name

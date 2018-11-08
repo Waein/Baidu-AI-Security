@@ -31,7 +31,7 @@ import java.util.Map;
  * @GitHub https://github.com/Waein
  * ===================================
  */
-@Controller("/")
+@Controller("/security")
 public class FaceDetectController {
 
     Logger log = LoggerFactory.getLogger(FaceDetectController.class);
